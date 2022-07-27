@@ -1,0 +1,153 @@
+body {
+    background-color: black;
+    padding: 75px;
+
+}
+
+
+.divbox {
+    background: url(../img/img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    animation: divbox 4s infinite alternate;
+}
+
+@keyframes divbox {
+    0% {
+        background: url(../img/img4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(../img/img3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(../img/img2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+
+.div {
+
+    margin: 20px auto 0 auto;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 0px 20px 20px rgb(70, 9, 84);
+    background: black;
+    border-radius: 20px;
+    animation: div 4s infinite alternate;
+}
+
+@keyframes div {
+    0% {
+        box-shadow: 0px 0px 20px 20px rgb(20, 192, 74);
+
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 20px rgb(12, 178, 194);
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 20px rgb(103, 7, 125);
+    }
+}
+
+
+
+.btnWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgb(36, 4, 29);
+    width: 100%;
+    height: 91%;
+    border-radius: 20px;
+
+}
+
+
+
+.btn {
+    flex: 0 1 30%;
+    height: 90px;
+    margin: 2px 0;
+    font-size: 50px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    border-radius: 30%;
+    animation: btn 4s infinite alternate;
+}
+
+@keyframes btn {
+    0% {
+        box-shadow: 0px 0px 20px 5px rgb(20, 192, 74);
+        text-shadow: rgb(20, 192, 74) 2px 5px;
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px 5px rgb(12, 178, 194);
+        text-shadow: rgb(12, 178, 194) 0px 5px;
+    }
+
+    100% {
+        box-shadow: 0px 0px 20px 5px rgb(103, 7, 125);
+        text-shadow: rgb(103, 7, 125) 3px 5px;
+    }
+}
+
+.btn:hover {
+    background-color: rgb(70, 9, 84);
+    box-shadow: 0px 0px 20px 5px rgb(70, 9, 84);
+    color: white;
+}
+
+.btn:active {
+    background-color: rgb(103, 7, 125);
+    color: rgb(0, 0, 0);
+}
+
+.output {
+    width: 98%;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    color: rgb(70, 9, 84);
+    font-size: 70px;
+    text-align: end;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 20px 5px rgb(70, 9, 84);
+    animation: output 4s infinite alternate;
+}
+
+@keyframes output {
+    0% {
+        text-shadow: rgb(20, 192, 74) 2px 5px;
+
+    }
+
+    50% {
+        text-shadow: rgb(12, 178, 194) 0px 5px;
+
+    }
+
+    100% {
+
+        text-shadow: rgb(103, 7, 125) 3px 5px;
+    }
+}
